@@ -28,7 +28,8 @@
             <div class="row-content">
                 <label class="lable text" for="name">Name </label>
                 <input class="input" type="text" id="name" name="name" placeholder="Your Name.." required>
-                <error-output class="text-error" for="text"></error-output>
+                <valid-message class="valid-name" for="name"></valid-message>
+                <error-output class="name-error" for="name"></error-output>
             </div>
             <!--UC3-->
             <div class="row-content">
@@ -57,9 +58,9 @@
             <div class="row-content">
                 <label class="label text" for="gender">Gender</label>
                 <div>
-                    <input type="radio" id="male" name="gender" value="male">
+                    <input type="radio" id="male" name="gender" value="Male">
                     <label class="text" for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
+                    <input type="radio" id="female" name="gender" value="Female">
                     <label class="text" for="female">Female</label>
                 </div>
             </div>
@@ -67,16 +68,28 @@
             <div class="row-content">
                 <label class="label text" for="department">Department</label>
                 <div>
-                    <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
-                    <label class="text" for="hr">HR</label>
-                    <input class="checkbox" type="checkbox" id="sales" name="sales" value="Sales">
-                    <label class="text" for="sales">Sales</label>
-                    <input class="checkbox" type="checkbox" id="finance" name="Finance" value="Finance">
-                    <label class="text" for="finance">Finance</label>
-                    <input class="checkbox" type="checkbox" id="engineer" name="Engineer" value="Engineer">
-                    <label class="text" for="engineer">Engineer</label>
-                    <input class="checkbox" type="checkbox" id="others" name="Others" value="Others">
-                    <label class="text" for="others">Others</label>
+                    <div>
+                        <label>
+                            <input class="checkbox" type="checkbox" id="hr" name="department" value="HR">
+                            <label class="text" for="hr">HR</label>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" id="sales" name="department" value="Sales">
+                            <label class="text" for="sales">Sales</label>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" id="finance" name="department" value="Finance">
+                            <label class="text" for="finance">Finance</label>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" id="engineer" name="department" value="Engineer">
+                            <label class="text" for="engineer">Engineer</label>
+                        </label>
+                        <label>
+                            <input class="checkbox" type="checkbox" id="others" name="department" value="Others">
+                            <label class="text" for="others">Others</label>
+                        </label>
+                    </div>
                 </div>
             </div>
 
@@ -145,6 +158,8 @@
                         <option value="2017">2017</option>
                     </select>
                 </div>
+                <valid-message class="valid-startDate" for="startDate"></valid-message>
+                <error-output class="startDate-error" for="startDate"></error-output>
             </div>
             <!--UC6-->
             <div class="row-content">
@@ -161,10 +176,11 @@
             </div>
         </form>
     </div>
-    <script src="../JS/EmployeePayRoll.js"></script> 
-    <script src="../JS/EmployeePayrollData.js"></script> 
+    <script src="../JS/EmployeePayRoll.js"></script>
     <script src="../JS/EmployeePayRollHome.js"></script>
+    <script src="../JS/EmployeePayrollData.js"></script>
     <script src="../JS/site_properties.js"></script>
     <script src="../JS/utility.js"></script>
 </body>
+
 </html>
